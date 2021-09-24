@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gasthaus Homberg Pohle</title>
+  </head>
+  <body>
+    <div class="grid">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a class="active" href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <img
+            class="image-round"
+            src="./resources/images/skizze-Kopie.jpg"
+            alt="logo"
+            height="100"
+            width="auto"
+          />
+        </div>
+      </header>
+
+      <main class="main-reservation">
+        <div>
+          <h3>Make your reservation:</h3>
+        </div>
+
+        <form action="">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+
+          <label id="form-last">Last Name <input type="text" /></label>
+
+          <label id="form-email">Email <input type="text" /></label>
+          <div id="form-date">choose date</div>
+          <div id="form-from">from <input type="date" /></div>
+          <div id="form-to">to <input type="date" /></div>
+          <div id="form-room">
+            <h5>room</h5>
+            <div>
+              <input type="radio" id="single" name="roomtype" value="single" />
+              <label for="single">single</label>
+            </div>
+            <div>
+              <input type="radio" id="double" name="roomtype" value="double" />
+              <label for="double">double</label>
+            </div>
+          </div>
+          <div id="form-breakfast">
+            <h5>breakfast</h5>
+            <div>
+              <input
+                type="checkbox"
+                id="type of breakfast"
+                name="type of breakfast"
+                value="regular"
+              />
+
+              <label for="type of breakfast"> regular</label><br />
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="type of breakfast"
+                name="type of breakfast"
+                value="vegetarian"
+              />
+              <label for="type of breakfast"> vegetarian</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="type of breakfast"
+                name="type of breakfast"
+                value="vegan"
+              />
+              <label for="type of breakfast"> vegan</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="type of breakfast"
+                name="type of breakfast"
+                value="none"
+              />
+              <label for="type of breakfast"> none</label>
+            </div>
+          </div>
+          <div id="form-send">
+            <button
+              type="button"
+              onclick="alert('Thank you, we will get in touch.')"
+            >
+              send request
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
